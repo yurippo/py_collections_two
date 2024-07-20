@@ -24,4 +24,18 @@ for new_word in my_lower_text.split():
 
 print(aparicoes_new)
 
+#another way to implement default dict would be
 
+dicionario = defaultdict(int)
+print(dicionario["Guilherme"])
+
+#returns 0 because there's no Guilherme in dicionario
+
+#but if I do
+
+dicionario["Guilherme"] = 15
+print(dicionario["Guilherme"])
+#now it returns 15
+
+#so when the defaultdict searchs for something that's not there inside it wil use int that is a function that will
+#return 0 in case nothing is found defaultdict(int) that's standard
