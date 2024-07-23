@@ -25,3 +25,12 @@ for new_word in my_lower_text.split():
 print(aparicoes_new)
 
 #the other power of the defaultdict is that we can use it with objects not only integers next code I'll create the class conta
+
+#simplifying my code even more
+
+aparicoes_new = defaultdict(int)
+
+for palavra in my_lower_text.split():
+    aparicoes_new[palavra] +=1
+
+print(aparicoes_new)
